@@ -8,8 +8,8 @@ import { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, Pagi
 import AdminReport from '../datatable/AdminReport.jsx';
 import UserManagement from '../datatable/UserManagement.jsx';
 import UserForm from "../form/UserForm.jsx";
-import CityManagerForm from '../form/CityManagerForm.jsx';
-import CityManagerReport from '../datatable/CityManagerReport.jsx';
+import CityManagerForm from '../form/BeneficiaryRegisterForm.jsx';
+import CityManagerReport from '../datatable/BeneficiaryReports.jsx';
 
 const CityManagerTab = () => {
     return (

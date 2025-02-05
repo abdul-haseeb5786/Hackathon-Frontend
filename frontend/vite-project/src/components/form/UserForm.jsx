@@ -79,7 +79,7 @@ const UserForm = () => {
   return (
     <Card className="bg-white text-black shadow-lg border border-gray-300 w-full mx-auto">
       <CardHeader>
-        <CardTitle>Register Beneficiaries</CardTitle>
+        <CardTitle>Register Users</CardTitle>
         <CardDescription>Fill in the details below to register a new beneficiary.</CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">

@@ -1,7 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster } from "@/components/ui/toaster";
 import Admin from "./pages/Admin";
-import CityManager from "./pages/Receptionist";
+import Receptionist from "./pages/Receptionist";
+import Home from "./pages/Home";
 
 export default function App() {
   return (
@@ -9,8 +10,10 @@ export default function App() {
       <Toaster />
       <BrowserRouter>
         <Routes>
+          
+          <Route path="/" element={<Home />} />
           <Route path="/admin" element={<Admin />} />
-          <Route path="/receptionist" element={<CityManager />} />
+          <Route path="/receptionist" element={<Receptionist />} />
          
         </Routes>
       </BrowserRouter>

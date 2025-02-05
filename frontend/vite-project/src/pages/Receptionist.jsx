@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/saylani-logo.png";
-import CityManagerTab from "@/components/tabs/CityManagerTab.jsx";
+import CityManagerTab from "@/components/tabs/ReceptionistTab.jsx";
 
 const Receptionist = () => {
     return (
