@@ -26,7 +26,7 @@ const BeneficiaryReports = () => {
       try {
         // If there's a CNIC search query, use the individual search API
         if (searchQuery) {
-          const response = await fetch(`http://localhost:5000/api/beneficiary/search/${searchQuery}`);
+          const response = await fetch(`https://hackathon-backend-jade.vercel.app/api/beneficiary/search/${searchQuery}`);
           const data = await response.json();
           if (data.message) {
             setBeneficiaries([]); // If no beneficiary is found, show empty results
@@ -47,7 +47,7 @@ const BeneficiaryReports = () => {
           ...(status && { status }),
         });
 
-        const response = await fetch(`http://localhost:5000/api/beneficiary/reports?${queryParams}`);
+        const response = await fetch(`https://hackathon-backend-jade.vercel.app/api/beneficiary/reports?${queryParams}`);
         const data = await response.json();
 
         setBeneficiaries(data.beneficiaries);

@@ -63,7 +63,7 @@ const BeneficiaryRegisterForm = () => {
   
     if (validateForm()) {
       try {
-        const response = await fetch("http://localhost:5000/api/beneficiary/register", {
+        const response = await fetch("https://hackathon-backend-jade.vercel.app/api/beneficiary/register", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

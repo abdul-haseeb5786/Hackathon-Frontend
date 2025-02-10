@@ -3,6 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import Admin from "./pages/Admin";
 import Receptionist from "./pages/Receptionist";
 import Home from "./pages/Home";
+import Login from "./pages/Login";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
         <Routes>
           
           <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/receptionist" element={<Receptionist />} />
          

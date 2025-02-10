@@ -12,7 +12,7 @@ const AdminPiechart = () => {
     useEffect(() => {
         const fetchIndustryData = async () => {
             try {
-                const response = await fetch("http://localhost:5000/api/industries/top5");
+                const response = await fetch("https://hackathon-backend-jade.vercel.app/api/industries/top5");
                 if (!response.ok) {
                     throw new Error(`HTTP error! Status: ${response.status}`);
                 }

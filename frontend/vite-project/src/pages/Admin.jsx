@@ -1,12 +1,14 @@
 import React from "react";
 import AdminTabs from "../components/tabs/AdminTab.jsx";  // Corrected import for AdminTab.jsx
 import logo from "../assets/saylani-logo.png";
+import Logout from "@/components/ui/logout.jsx";
 
 const Admin = () => {
     
     return (
         <div className="w-full min-h-screen bg-yellow-100 flex flex-col items-center py-10">
             {/* Logo with responsive sizing */}
+            <Logout />                                          
             <img
                 src={logo}
                 alt="Saylani Logo"
